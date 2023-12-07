@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="Container phone-page">
+      <h2>Enter Your Phone Number</h2>
+      <div>
+        <input
+          type="number"
+          class="Phone"
+          onchange="write_firstname(this);"
+          id="Phone"
+          placeholder="+963 *** *** ***"
+        />
+      </div>
+      <div>
+        <button type="button" class="btn btn-primary" id="click-veri">
+          Submit
+        </button>
+      </div>
+    </form>
+
+    <form class="Container verification-page">
+      <button class="closing-btn">x</button>
+      <h2>Verify Your Account</h2>
+      <p>
+        please type the verification code we sent <br />
+        to +
+      </p>
+      <p id="p"></p>
+      <div class="code-contaier">
+        <input type="number" class="code" placeholder="0"  min="0"  max="9"  required />
+
+        <input type="number" class="code"  placeholder="0" min="0" max="9" required />
+
+        <input type="number"  class="code"  placeholder="0" min="0"  max="9" required/>
+
+        <input type="number"  class="code"  placeholder="0" min="0"  max="9" required/>
+
+        <input type="number"  class="code"  placeholder="0" min="0"  max="9" required/>
+
+        <input type="number"  class="code"  placeholder="0" min="0"  max="9" required/>
+      </div>
+      <div>
+        <button type="submit" class="btn btn-primary click-ok">VERIFY</button>
+      </div>
+      <small class="info">
+        If you didn't receive a code... <strong >Resend</strong>
+      </small >
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>
